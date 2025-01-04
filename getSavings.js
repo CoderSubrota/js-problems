@@ -1,6 +1,6 @@
 function monthlySaving(payments,livingCoast){
 if(isNaN(livingCoast) || !Array.isArray(payments)){
-    return console.log("invalid input") ;
+    return "invalid input" ;
 }
  let sumOfPayments=0;
   for(let i=0; i<payments.length; i++){
@@ -16,12 +16,12 @@ if(isNaN(livingCoast) || !Array.isArray(payments)){
   let savings=sumOfPayments-livingCoast;
 
   if(savings>=0){
-    return console.log(savings) ;
+    return savings ;
   }else{
-    return console.log("earn more")
+    return "earn more";
   }
 }
 
-
-monthlySaving([900,2700,3400],10000) ;
+const result = monthlySaving([900,2700,3400],10000) ;
+console.log(result) ;
 

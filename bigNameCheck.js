@@ -8,4 +8,5 @@ for(let i=0; i<friends.length; i++){
         lengthCheck=i;
     }
 }
-console.log(friends[lengthCheck]) ;
+const result = friends[lengthCheck] ;
+console.log(result) ;

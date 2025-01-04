@@ -1,10 +1,10 @@
 function oddEven(number){
    if(number%2==0){
-    return console.log("Even");
+    return "Even";
    }else{
-    return console.log("Odd");
+    return "Odd";
    }
 }
 
-
-oddEven(53)
+let result = oddEven(53) ;
+console.log(result) ;
